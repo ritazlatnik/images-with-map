@@ -28,7 +28,7 @@ window.addEventListener('load', (event) => {
     }).addTo(mymap);
 
     // Create variable for marker and add to map
-    var marker = L.marker(coordinates.London).addTo(mymap);
+    // var marker = L.marker(coordinates.London).addTo(mymap);
 
     // Set viewport to London after 5 sec
     // setTimeout(function() {
@@ -36,7 +36,7 @@ window.addEventListener('load', (event) => {
     // }, 5000);
 
     // Create variable for button
-    var button = document.getElementById('button');
+    // var button = document.getElementById('button');
 
     // If I click on the Go button, set viewport to London
     // button.addEventListener('click', (event) => {
@@ -51,11 +51,35 @@ window.addEventListener('load', (event) => {
 
     var popup = L.popup();
 
-    // If I click on 1st image, set viewport to Dunakeszi, add a marker
+    // function onMapClick(e) {
+    //     popup
+    //         .setLatLng(e.latlng)
+    //         .setContent("You clicked the map at " + e.latlng.toString())
+    //         .openOn(mymap);
+    //     L.marker(e.latlng).addTo(mymap);
+    //     console.log(e);
+    // }
+
+    // mymap.on('click', onMapClick);
+
+
+    // If I click on 1st image, set viewport to Dunakeszi, add a marker and a popup with city and country name
     var dunakeszi = document.getElementById('dunakeszi');
+
+    // function onImageClick(e) {
+    //     popup
+    //         .setLatLng(e.latlng)
+    //         .setContent("hello")
+    //         .openOn(mymap);
+    //     console.log(e);
+    // }
+
+    // dunakeszi.on('click', onImageClick);
+
     dunakeszi.addEventListener('click', (event) => {
         mymap.setView(coordinates.Dunakeszi, 11);
         L.marker(coordinates.Dunakeszi).addTo(mymap);
+        // L.popup.setContent("Dunakeszi, Hungary").openOn(mymap);                 // ???????????????????????
     });
 
     // If I click on 2nd image, set viewport to London, add a marker
@@ -114,16 +138,4 @@ window.addEventListener('load', (event) => {
         L.marker(coordinates.Rome).addTo(mymap);
     });
 
-    // Comment out below this
-    // function onMapClick(e) {
-    //     popup
-    //         .setLatLng(e.latlng)
-    //         .setContent("You clicked the map at " + e.latlng.toString())
-    //         .openOn(mymap);
-    //     L.marker(e.latlng).addTo(mymap);
-    //     console.log(e);
-    // }
-
-    // mymap.on('click', onMapClick);
-    // Comment out all above at the end
 });
