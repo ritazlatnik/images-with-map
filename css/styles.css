@@ -1,0 +1,78 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;                /* Firexfox */
+    -webkit-box-sizing: border-box;             /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;                     /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    margin: 0;
+    font-size: 12px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main {                                         /* includes images on the left + map on the right */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    width: 350px;
+    height: 350px;
+    background: grey;
+}
+
+ul {                                       /* collection of li individual images*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    /* width: 30%;
+    height: 30%; */
+    padding: 2px; 
+}
+
+#map {
+    height: 600px;
+}

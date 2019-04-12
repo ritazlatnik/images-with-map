@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Where did I take it?</title>
+
+    <!-- Responsive design - it sets the initial scale of the browser on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Link to Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+
+    <!-- Link to Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+   
+    <script src="./js/index.js"></script>
+
+    <!-- Link to fonts -->
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Where did I take it?</h1>
+            <h2>Put down that map and get wonderfully lost.</h2>
+        </header>
+
+        <div>
+            <ul class="images">
+                <li class="image">
+                    <img src="./images/1-dunakeszi.JPG" alt="dunakeszi">
+                </li>
+                <li class="image">
+                    <img src="./images/2-london.JPG" alt="london">
+                </li>
+                <li class="image">
+                    <img src="./images/3-prague.JPG" alt="prague">
+                </li>
+                <li class="image">
+                    <img src="./images/4-sahara.JPG" alt="sahara">
+                </li>
+                <li class="image">
+                    <img src="./images/5-bournemouth.JPG" alt="bournemouth">
+                </li>
+                <li class="image">
+                    <img src="./images/6-chefchaouen.JPG" alt="chefchaouen">
+                </li>
+                <li class="image">
+                    <img src="./images/7-dover.JPG" alt="dover">
+                </li>
+                <li class="image">
+                    <img src="./images/8-nyc.JPG" alt="nyc">
+                </li>
+                <li class="image">
+                    <img src="./images/9-rome.JPG" alt="rome">
+                </li>
+            </ul>
+
+            <div id="map"></div>
+
+            <button id="button">Go!</button>
+
+            <img id="rome" src="./images/9-rome.JPG" alt="rome">
+
+            <button id="add-marker">Add Marker</button>
+        </div>
+    </div>
+</body>
+</html>
