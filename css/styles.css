@@ -116,23 +116,27 @@ img {
 }
 
 /******************************************
-/* RESPONSIVE DESIGN - 1920px
+/* RESPONSIVE DESIGN - 1680px
 /*******************************************/
 
-@media (min-width: 1920px) {
+@media (min-width: 1620px) {
     
     h1 {
         font-size: 60px;
         margin-top: 50px;
     }
 
+    ul {
+        margin: 30px 50px;
+    }
+
     img {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
     }
 
     #map {
-        height: 660px;
+        height: 560px;
     }
 }
 
