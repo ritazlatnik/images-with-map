@@ -15,7 +15,7 @@ window.addEventListener('load', (event) => {
     };
 
     // Load map in Watford (my location)
-    var mymap = L.map('map', {
+    var mymap = L.map('map', {                        // L - leaflet=object
         scrollWheelZoom: true                         // Enable mouse wheel zoom
     }).setView(coordinates.Watford, 13);
 

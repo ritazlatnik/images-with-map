@@ -36,8 +36,7 @@ h1 {
 
 ul {                                       /* collection of li individual images*/
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;                   /* flex-direction: row; flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     padding-left: 0;
