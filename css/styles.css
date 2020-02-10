@@ -3,11 +3,14 @@
 /*******************************************/
 
 /* Box Model Hack */
-*, *:before, *:after {
-    -moz-box-sizing: border-box;                /* Firexfox */
-    -webkit-box-sizing: border-box;             /* Safari/Chrome/iOS/Android */
-    box-sizing: border-box;                     /* IE */
-}
+/* *, *:before, *:after { */
+    /* Firexfox */
+    /* -moz-box-sizing: border-box;     */
+    /* Safari/Chrome/iOS/Android */
+    /* -webkit-box-sizing: border-box;        */
+    /* IE */      
+    /* box-sizing: border-box;                      */
+/* } */
 
 /******************************************
 /* BASE STYLES
@@ -30,7 +33,7 @@ h1 {
     text-transform: uppercase;
     word-spacing: 0.2em;
     line-height: 1.5em;
-    margin-top: 14px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -57,7 +60,7 @@ img {
 }
 
 #map {
-    height: 380px;
+    height: 360px;
     margin: 10px;
 }
 
@@ -95,7 +98,7 @@ img {
 
     h1 {
         font-size: 50px;
-        margin-top: 40px;
+        /* margin-top: 40px; */
     }
 
     ul {
@@ -147,7 +150,7 @@ img {
     
     h1 {
         font-size: 70px;
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     img {
@@ -157,5 +160,6 @@ img {
 
     #map {
         height: 1000px;
+        margin-bottom: 50px;
     }
 }
