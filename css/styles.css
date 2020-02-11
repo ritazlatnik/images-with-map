@@ -18,7 +18,7 @@
 
 body {
     margin: 0;
-    font-size: 12px;
+    font-size: 0.75rem;     /* 12px */
     font-family: 'Lato', sans-serif;
 }
 
@@ -28,13 +28,13 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.375rem;    /* 22px */
     color: #1c4123;
     text-transform: uppercase;
     word-spacing: 0.2em;
     line-height: 1.5em;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.3125rem;        /* 5px */
+    margin-bottom: 0.3125rem;     /* 5px */
 }
 
 ul {                                       /* collection of li individual images*/
@@ -55,13 +55,13 @@ li {
 img {
     width: 120px;
     height: 120px;
-    padding: 2px;
+    padding: 0.125rem;       /* 2px */
     cursor: pointer; 
 }
 
 #map {
     height: 360px;
-    margin: 10px;
+    margin: 0.625rem;       /* 10px */
 }
 
 /******************************************
@@ -71,23 +71,23 @@ img {
 @media (min-width: 768px) {
 
     h1 {
-        font-size: 30px;
-        margin-top: 30px;
+        font-size: 1.875rem;        /* 30px */
+        margin-top: 1.875rem;       /* 30px */
     }
 
     ul {
-        margin: 15px 60px;
+        margin: 0.9375rem 3.75rem;      /* 15px 60px */
     }
 
     img {
         width: 170px;
         height: 170px;
-        padding: 5px;
+        padding: 0.3125rem;       /* 5px */
     }
 
     #map {
         height: 350px;
-        margin: 0 60px;
+        margin: 0 3.75rem;     /* 0 60px */
     }
 }
 
@@ -98,23 +98,23 @@ img {
 @media (min-width: 1024px) {
 
     h1 {
-        font-size: 50px;
-        margin-top: 40px;
+        font-size: 3.125rem;
+        margin-top: 2.5rem;
     }
 
     ul {
-        margin: 20px 80px;
+        margin: 1.25rem 5rem;
     }
 
     img {
         width: 200px;
         height: 200px;
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     #map {
         height: 500px;
-        margin: 0 100px;
+        margin: 0 6.25rem;
     }
 }
 
@@ -125,8 +125,8 @@ img {
 @media (min-width: 1620px) {
     
     h1 {
-        font-size: 60px;
-        margin-top: 50px;
+        font-size: 3.75rem;
+        margin-top: 3.125rem;
     }
 
     .container {
@@ -136,7 +136,7 @@ img {
 
     ul {
         width: 50%;
-        margin: 30px 0px;
+        margin: 1.875rem 0;
     }
 
     img {
@@ -147,7 +147,7 @@ img {
     #map {
         height: 650px;
         width: 50%;
-        margin: 50px 80px 50px 0;
+        margin: 3.125rem 5rem 3.125rem 0;
     }
 }
 
@@ -158,8 +158,8 @@ img {
 @media (min-width: 2560px) {
     
     h1 {
-        font-size: 70px;
-        margin-top: 50px;
+        font-size: 4.375rem;
+        margin-top: 3.125rem;
     }
 
     img {
@@ -169,6 +169,6 @@ img {
 
     #map {
         height: 1000px;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
     }
 }
