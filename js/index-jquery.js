@@ -43,12 +43,6 @@ $(document).ready(function() {
     //     mymap.setView(coordinates.London);
     // });
 
-    // If I click on Add Marker, add it to Rome
-    // var addMarker = document.getElementById('add-marker');
-    // addMarker.addEventListener('click', (event) => {
-    //     L.marker(coordinates.Rome).addTo(mymap);
-    // });
-
     var popup = L.popup();
 
     // function onMapClick(e) {
@@ -68,7 +62,7 @@ $(document).ready(function() {
     $('#dunakeszi').on('click', function() {
         mymap.setView(coordinates.Dunakeszi, 11);
         L.marker(coordinates.Dunakeszi).addTo(mymap);
-        // L.popup.setContent("Dunakeszi, Hungary").openOn(mymap);                 // ???????????????????????
+        popup.setContent("Dunakeszi, Hungary").openOn(mymap);
     });
 
     // If I click on 2nd image, set viewport to London, add a marker
