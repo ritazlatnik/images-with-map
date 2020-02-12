@@ -3,14 +3,14 @@
 /*******************************************/
 
 /* Box Model Hack */
-/* *, *:before, *:after { */
+*, *:before, *:after {
     /* Firexfox */
-    /* -moz-box-sizing: border-box;     */
+    -moz-box-sizing: border-box;    
     /* Safari/Chrome/iOS/Android */
-    /* -webkit-box-sizing: border-box;        */
+    -webkit-box-sizing: border-box;       
     /* IE */      
-    /* box-sizing: border-box;                      */
-/* } */
+    box-sizing: border-box;                     
+}
 
 /******************************************
 /* BASE STYLES
@@ -52,10 +52,10 @@ li {
     flex-direction: row;
 }
 
-img {
+li img {
     width: 120px;
     height: 120px;
-    padding: 0.125rem;       /* 2px */
+    padding: 2px;
     cursor: pointer; 
 }
 
@@ -68,34 +68,14 @@ img {
 /* RESPONSIVE DESIGN - iPad 768px
 /*******************************************/
 
-@media (min-width: 768px) {
 
-    h1 {
-        font-size: 1.875rem;        /* 30px */
-        margin-top: 1.875rem;       /* 30px */
-    }
 
-    ul {
-        margin: 0.9375rem 3.75rem;      /* 15px 60px */
-    }
-
-    img {
-        width: 170px;
-        height: 170px;
-        padding: 0.3125rem;       /* 5px */
-    }
-
-    #map {
-        height: 350px;
-        margin: 0 3.75rem;     /* 0 60px */
-    }
-}
 
 /******************************************
 /* RESPONSIVE DESIGN - iPad Pro 1024px
 /*******************************************/
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 
     h1 {
         font-size: 3.125rem;
@@ -116,13 +96,13 @@ img {
         height: 500px;
         margin: 0 6.25rem;
     }
-}
+} */
 
 /******************************************
 /* RESPONSIVE DESIGN - 1680px
 /*******************************************/
 
-@media (min-width: 1620px) {
+/* @media (min-width: 1620px) {
     
     h1 {
         font-size: 3.75rem;
@@ -149,13 +129,13 @@ img {
         width: 50%;
         margin: 3.125rem 5rem 3.125rem 0;
     }
-}
+} */
 
 /******************************************
 /* RESPONSIVE DESIGN - 2560px
 /*******************************************/
 
-@media (min-width: 2560px) {
+/* @media (min-width: 2560px) {
     
     h1 {
         font-size: 4.375rem;
@@ -171,4 +151,4 @@ img {
         height: 1000px;
         margin-bottom: 3.125rem;
     }
-}
+} */

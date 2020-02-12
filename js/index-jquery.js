@@ -61,8 +61,7 @@ $(document).ready(function() {
     // var dunakeszi = $('#dunakeszi');    
     $('#dunakeszi').on('click', function() {
         mymap.setView(coordinates.Dunakeszi, 11);
-        L.marker(coordinates.Dunakeszi).addTo(mymap);
-        popup.setContent("Dunakeszi, Hungary").openOn(mymap);
+        L.marker(coordinates.Dunakeszi).addTo(mymap).bindPopup(popup).openOn();
     });
 
     // If I click on 2nd image, set viewport to London, add a marker
