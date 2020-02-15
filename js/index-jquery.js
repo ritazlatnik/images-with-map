@@ -61,55 +61,64 @@ $(document).ready(function() {
     // var dunakeszi = $('#dunakeszi');    
     $('#dunakeszi').on('click', function() {
         mymap.setView(coordinates.Dunakeszi, 11);
-        L.marker(coordinates.Dunakeszi).addTo(mymap).bindPopup(popup).openOn();
+        L.marker(coordinates.Dunakeszi).addTo(mymap);
+        L.popup().setLatLng([47.66, 19.153]).setContent("Dunakeszi, Hungary").openOn(mymap);
     });
 
     // If I click on 2nd image, set viewport to London, add a marker
     $('#london').on('click', function() {
         mymap.setView(coordinates.London, 12);
         L.marker(coordinates.London).addTo(mymap);
+        L.popup().setLatLng([51.5254, -0.142]).setContent("London, United Kingdom").openOn(mymap);
     });
 
     // If I click on 3rd image, set viewport to Prague, add a marker
     $('#prague').on('click', function() {
         mymap.setView(coordinates.Prague, 11);
         L.marker(coordinates.Prague).addTo(mymap);
+        L.popup().setLatLng([50.11, 14.413]).setContent("Prague, Poland").openOn(mymap);
     });
 
     // If I click on 4th image, set viewport to Sahara, add a marker
     $('#sahara').on('click', function() {
         mymap.setView(coordinates.Sahara, 11);
         L.marker(coordinates.Sahara).addTo(mymap);
+        L.popup().setLatLng([31.0886, -4.002]).setContent("Merzouga, Morocco").openOn(mymap);
     });
 
     // If I click on 5th image, set viewport to Bournemouth, add a marker
     $('#bournemouth').on('click', function() {
         mymap.setView(coordinates.Bournemouth, 11);
         L.marker(coordinates.Bournemouth).addTo(mymap);
+        L.popup().setLatLng([50.735, -1.867]).setContent("Bournemouth, United Kingdom").openOn(mymap);
     });
 
     // If I click on 6th image, set viewport to Chefchaouen, add a marker
     $('#chefchaouen').on('click', function() {
         mymap.setView(coordinates.Chefchaouen, 9);
         L.marker(coordinates.Chefchaouen).addTo(mymap);
+        L.popup().setLatLng([35.27, -5.26]).setContent("Chefchaouen, Morocco").openOn(mymap);
     });
 
     // If I click on 7th image, set viewport to Dover, add a marker
     $('#dover').on('click', function() {
         mymap.setView(coordinates.Dover, 10);
         L.marker(coordinates.Dover).addTo(mymap);
+        L.popup().setLatLng([51.168, 1.33]).setContent("Dover, United Kingdom").openOn(mymap);
     });
 
     // If I click on 8th image, set viewport to NYC, add a marker
     $('#nyc').on('click', function() {
         mymap.setView(coordinates.NYC, 11);
         L.marker(coordinates.NYC).addTo(mymap);
+        L.popup().setLatLng([40.785, -73.98]).setContent("New York City, USA").openOn(mymap);
     });
 
     // If I click on 9th image, set viewport to Rome, add a marker
     $('#rome').on('click', function() {
         mymap.setView(coordinates.Rome, 11);
         L.marker(coordinates.Rome).addTo(mymap);
+        L.popup().setLatLng([41.918, 12.479]).setContent("Rome, Italy").openOn(mymap);
     });
 });
 
