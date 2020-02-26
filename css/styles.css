@@ -26,6 +26,11 @@ body {
 /* LAYOUT
 /*******************************************/
 
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
 h1 {
     text-align: center;
     font-size: 1.375rem;    /* 22px */
@@ -33,8 +38,7 @@ h1 {
     text-transform: uppercase;
     word-spacing: 0.2em;
     line-height: 1.5em;
-    margin-top: 0.3125rem;        /* 5px */
-    margin-bottom: 0.3125rem;     /* 5px */
+    margin: 20px 0 5px;
 }
 
 ul {                                       /* collection of li individual images*/
@@ -43,7 +47,6 @@ ul {                                       /* collection of li individual images
     justify-content: center;
     align-items: center;
     padding-left: 0;
-    /* margin: 0; */
 }
 
 li {
@@ -53,9 +56,9 @@ li {
 }
 
 li img {
-    width: 120px;
-    height: 120px;
-    padding: 2px;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
     cursor: pointer; 
 }
 
@@ -65,17 +68,33 @@ li img {
 }
 
 /******************************************
-/* RESPONSIVE DESIGN - iPad 768px
+/* RESPONSIVE DESIGN - 600px
 /*******************************************/
 
+@media (min-width: 600px) {
 
+    h1 {
+        font-size: 28px;
+        margin-top: 2rem;
+    }
 
+    li img {
+        width: 150px;
+        height: 150px;
+        padding: 0.625rem;
+    }
+
+    #map {
+        height: 425px;
+        margin: 0 3rem;
+    }
+}
 
 /******************************************
-/* RESPONSIVE DESIGN - iPad Pro 1024px
+/* RESPONSIVE DESIGN - 960px
 /*******************************************/
 
-/* @media (min-width: 1024px) {
+@media (min-width: 960px) {
 
     h1 {
         font-size: 3.125rem;
@@ -83,29 +102,55 @@ li img {
     }
 
     ul {
-        margin: 1.25rem 5rem;
+        margin: 20px 0;
     }
 
-    img {
-        width: 200px;
-        height: 200px;
-        padding: 0.625rem;
+    li img {
+        width: 230px;
+        height: 230px;
+        padding: 10px;
     }
 
     #map {
-        height: 500px;
-        margin: 0 6.25rem;
+        height: 600px;
+        margin: 0 100px;
     }
-} */
+}
 
 /******************************************
-/* RESPONSIVE DESIGN - 1680px
+/* RESPONSIVE DESIGN - 1280px
 /*******************************************/
 
-/* @media (min-width: 1620px) {
+@media (min-width: 1280px) {
     
     h1 {
         font-size: 3.75rem;
+        margin-top: 3.125rem;
+    }
+
+    ul {
+        margin: 20px 140px;
+    }
+
+    li img {
+        width: 260px;
+        height: 260px;
+    }
+
+    #map {
+        height: 625px;
+        margin: 3.125rem 5rem 3.125rem 5rem;
+    }
+}
+
+/******************************************
+/* RESPONSIVE DESIGN - 1920px
+/*******************************************/
+
+@media (min-width: 1920px) {
+    
+    h1 {
+        font-size: 4.375rem;
         margin-top: 3.125rem;
     }
 
@@ -116,39 +161,17 @@ li img {
 
     ul {
         width: 50%;
-        margin: 1.875rem 0;
+        margin: 20px 0;
+        align-content: center;
     }
 
-    img {
+    li img {
         width: 200px;
         height: 200px;
     }
 
     #map {
-        height: 650px;
+        height: 580px;
         width: 50%;
-        margin: 3.125rem 5rem 3.125rem 0;
     }
-} */
-
-/******************************************
-/* RESPONSIVE DESIGN - 2560px
-/*******************************************/
-
-/* @media (min-width: 2560px) {
-    
-    h1 {
-        font-size: 4.375rem;
-        margin-top: 3.125rem;
-    }
-
-    img {
-        width: 300px;
-        height: 300px;
-    }
-
-    #map {
-        height: 1000px;
-        margin-bottom: 3.125rem;
-    }
-} */
+}

@@ -62,7 +62,7 @@ $(document).ready(function() {
     $('#dunakeszi').on('click', function() {
         mymap.setView(coordinates.Dunakeszi, 11);
         L.marker(coordinates.Dunakeszi).addTo(mymap);
-        L.popup().setLatLng([47.66, 19.153]).setContent("Dunakeszi, Hungary").openOn(mymap);
+        L.popup().setLatLng([47.66, 19.153]).setContent("Dunakeszi, Hungary").openOn(mymap);    // changed coordinates of popup not to cover pin
     });
 
     // If I click on 2nd image, set viewport to London, add a marker
