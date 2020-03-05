@@ -175,3 +175,36 @@ li img {
         width: 50%;
     }
 }
+
+/******************************************
+/* RESPONSIVE DESIGN - HD & Retina displays
+/*******************************************/
+
+/* @media 
+(min-width: 1920px),
+(-webkit-min-device-pixel-ratio: 2),
+(-moz-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) 
+{
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    ul {
+        width: 50%;
+        margin: 20px 0 20px 50px;
+        align-content: center;
+    }
+    
+    li img {
+        width: 210px;
+        height: 210px;
+    }
+
+    #map {
+        height: 620px;
+        width: 50%;
+    }
+
+} */
