@@ -184,8 +184,9 @@ li img {
 (min-width: 1920px),
 (-webkit-min-device-pixel-ratio: 2),
 (-moz-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) 
+(min-resolution: 192dpi)
 {
+    
     .container {
         display: flex;
         flex-direction: row;
